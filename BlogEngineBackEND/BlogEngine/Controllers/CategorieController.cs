@@ -17,10 +17,9 @@ namespace BlogEngine.Controllers
         private ModelBD db = new ModelBD();
 
         // GET: api/Categorie
-        public IEnumerable<string> GetCategories()
+        public IEnumerable<Categorie> GetCategories()
         {
-            //return db.Categories;
-            return new string[] { "value1", "value2" };
+            return db.Categories;
         }
 
         // GET: api/Categorie/5
