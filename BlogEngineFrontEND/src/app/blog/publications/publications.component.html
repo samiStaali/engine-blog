@@ -1,0 +1,15 @@
+<div class="d-flex flex-row">
+  <div class= "p-2">
+    <h2> Publications</h2>
+   </div>
+  <div class= "p-2">
+   <a class="btn btn-outline-success" routerLink=""><i class="fa fa-plus-square"></i> Ajouter</a>
+  </div>
+</div>
+<div>
+    <ul class="list-group" *ngFor="let publication of listePublications;let i=index;">
+       <li class="list-group-item">
+         <a routerLink="">{{publication}}</a>
+       </li>
+    </ul>
+</div>

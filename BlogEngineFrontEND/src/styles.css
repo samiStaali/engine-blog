@@ -1,0 +1,5 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.form-control,.input-group-text{
+    border:1px solid #0080ff;
+}
