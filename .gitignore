@@ -133,6 +133,7 @@ dist
 */node_modules/
 */dist/
 #BlogEngineBackEnd
-*/bin
+BlogEngineBackEND/BlogEngine/bin
+BlogEngineBackEND/BlogEngine/obj
 BlogEngineBackEND/packages
 
