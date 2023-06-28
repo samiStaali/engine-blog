@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Categorie } from 'src/app/models/categorie.model';
 import { Publication } from 'src/app/models/publication.model';
 import { PublicationService } from 'src/app/services/publication.service';
 
@@ -9,13 +10,13 @@ import { PublicationService } from 'src/app/services/publication.service';
 })
 export class PublicationsComponent implements OnInit {
 
-  //listePublications: Publication[];
-  listePublications: string[] = ['mimi', 'mama', 'momo'];
+  listePublications: Publication[];
+  listeCategories: Categorie[];
+  
   constructor(private publicationService: PublicationService) { }
 
   ngOnInit() {
-    //this.CategorieService.obtenirListeCategories().then(res => this.listeCategories = res as Categorie[]);
-    
+    this.publicationService.obtenirListePublications().then(res => this.listePublications = res as Publication[]); 
   }
 
 

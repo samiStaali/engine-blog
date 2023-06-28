@@ -6,17 +6,25 @@ import { AppComponent } from './app.component';
 import { BlogComponent } from './blog/blog.component';
 import { CategoriesComponent } from './blog/categories/categories.component';
 import { PublicationsComponent } from './blog/publications/publications.component';
+import { CategorieComponent } from './blog/categories/categorie/categorie.component';
+import { FormsModule } from '@angular/forms';
+import { PublicationComponent } from './blog/publications/publication/publication.component';
+//import { ToastrModule } from 'ngx-toastr';
 @NgModule({
   declarations: [
     AppComponent,
     BlogComponent,
     CategoriesComponent,
-    PublicationsComponent
+    PublicationsComponent,
+    CategorieComponent,
+    PublicationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule 
+    FormsModule,
+    HttpClientModule
+   // ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

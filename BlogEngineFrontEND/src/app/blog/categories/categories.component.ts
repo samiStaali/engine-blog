@@ -9,12 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoriesComponent implements OnInit {
 
-  /*listeCategories: Categorie[];*/
-  listeCategories: string[] = ['allo', 'hi', 'hello'];
+  listeCategories: Categorie[];
   constructor(private categorieService: CategorieService) { }
 
   ngOnInit() {
-    //this.CategorieService.obtenirListeCategories().then(res => this.listeCategories = res as Categorie[]);
+    this.categorieService.obtenirListeCategories().then(res => this.listeCategories = res as Categorie[]);
     
   }
 

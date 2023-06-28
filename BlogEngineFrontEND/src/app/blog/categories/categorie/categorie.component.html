@@ -1,0 +1,14 @@
+<h4 class="dispaly-4">Ajouter Categorie</h4>
+<br>
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    <input type="hidden"  name="CategorieID" #CategorieID="ngModel" [(ngModel)]="this.categorieService.formData.CategorieID">
+  
+    <div class="form-group col-md-4">
+      <label>Titre</label>
+      <input name="Titre"  #OrderNo="ngModel" [(ngModel)]="categorieService.formData.Titre" class="form-control">
+    </div>
+    <br>  
+  <div class="form-group">
+    <button type="submit" class="btn btn-dark"><i class="fa fa-database"></i> Sauvegarder</button>  
+  </div>   
+</form>

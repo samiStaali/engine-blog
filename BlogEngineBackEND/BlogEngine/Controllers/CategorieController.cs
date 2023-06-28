@@ -74,12 +74,12 @@ namespace BlogEngine.Controllers
         [ResponseType(typeof(Categorie))]
         public IHttpActionResult PostCategorie(Categorie categorie)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
 
-            db.Categories.Add(categorie);
+            //Order table
+            if (categorie.CategorieID == 0)
+                db.Categories.Add(categorie);
+            else
+                db.Entry(categorie).State = EntityState.Modified;
             db.SaveChanges();
 
             return CreatedAtRoute("DefaultApi", new { id = categorie.CategorieID }, categorie);

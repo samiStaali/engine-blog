@@ -3,13 +3,13 @@
     <h2> Categories</h2>
    </div>
   <div class= "p-2">
-   <a class="btn btn-outline-success" routerLink=""><i class="fa fa-plus-square"></i> Ajouter</a>
+   <a class="btn btn-outline-success" routerLink="/categorie"><i class="fa fa-plus-square"></i> Ajouter</a>
   </div>
 </div>
 <div>
     <ul class="list-group" *ngFor="let categorie of listeCategories;let i=index;">
       <li class="list-group-item">
-        <a routerLink="">{{categorie}}</a>
+        <a routerLink="/categorie/modifier/{{categorie.CategorieID}}">{{categorie.Titre}}</a>
       </li>
    </ul>
 </div>
