@@ -137,3 +137,12 @@ BlogEngineBackEND/BlogEngine/bin
 BlogEngineBackEND/BlogEngine/obj
 BlogEngineBackEND/packages
 
+BlogEngineBackEND/BlogEngine/bin/
+BlogEngineBackEND/BlogEngine/obj/
+BlogEngineBackEND/BlogEngine/bin/BlogEngine.dll
+BlogEngineBackEND/BlogEngine/bin/BlogEngine.dll.config
+BlogEngineBackEND/BlogEngine/bin/BlogEngine.pdb
+BlogEngineBackEND/BlogEngine/bin/System.Net.Http.Formatting.dll
+BlogEngineBackEND/BlogEngine/bin/System.Web.Http.dll
+BlogEngineBackEND/BlogEngine/bin/fr/System.Net.Http.Formatting.resources.dll
+BlogEngineBackEND/BlogEngine/bin/fr/System.Web.Http.resources.dll
